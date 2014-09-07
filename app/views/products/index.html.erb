@@ -13,7 +13,7 @@
 
   <tbody>
     <% @products.each do |product| %>
-    <% if product.title["yolo"]%>
+    <!--if product.title["yolo"]-->
       <tr class="<%= cycle('list_line_odd', 'list_line_even') %>" >
         <td class="list_description>">
           <dl>
@@ -31,7 +31,7 @@
         <%= link_to 'Destroy', product, method: :delete, data: { confirm: 'Are you sure?' } %>
         </td>
       </tr>
-    <% end %>
+    <!-- end -->
     <% end %>
   </tbody>
 </table>
